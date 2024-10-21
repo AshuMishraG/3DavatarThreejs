@@ -7,7 +7,7 @@ export const Experiance = () => {
       <>
          <Canvas>
             <OrbitControls />
-            <Gltf src="/models/clasroom_default.glb" />
+            <Gltf src="" />
          </Canvas>
       </>
    );
