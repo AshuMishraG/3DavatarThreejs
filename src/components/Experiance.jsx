@@ -1,5 +1,5 @@
 "use client";
-import { Box, Gltf, OrbitControls } from "@react-three/drei";
+import { Box, Environment, Gltf, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 export const Experiance = () => {
@@ -7,7 +7,10 @@ export const Experiance = () => {
       <>
          <Canvas>
             <OrbitControls />
-            <Gltf src="" />
+            <Environment preset="sunset" />
+            <ambientLight intensity={0.8} color="pink" />
+            <pointLight position={[10, 10, 10]} />
+            <Gltf src="/models/classroom_default.glb" />
          </Canvas>
       </>
    );
