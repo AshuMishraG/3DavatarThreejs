@@ -1,5 +1,5 @@
 "use client";
-import { Box, OrbitControls } from "@react-three/drei";
+import { Box, Gltf, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 export const Experiance = () => {
@@ -7,9 +7,7 @@ export const Experiance = () => {
       <>
          <Canvas>
             <OrbitControls />
-            <Box>
-               <meshNormalMaterial />
-            </Box>
+            <Gltf src="/models/clasroom_default.glb" />
          </Canvas>
       </>
    );
